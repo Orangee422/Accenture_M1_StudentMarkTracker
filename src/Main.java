@@ -20,11 +20,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int i = 0;
         for(int[] row : STUDENTS_MARKS){
-            System.out.println(findAverageMark(STUDENTS_MARKS[i]));
-            System.out.println(classifyAverageMark(findAverageMark(STUDENTS_MARKS[i])));
-            i++;
+            double averageMark = findAverageMark(row);
+            System.out.println(averageMark);
+            System.out.println(classifyAverageMark(averageMark));
         }
 
     }
